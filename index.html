@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern HTML Email Template</title>
+<style type="text/css">
+	body {
+		margin: 0;
+		background-color: #cccccc;
+	}
+	table {
+		border-spacing: 0;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
+
+	/* format wrapper */
+	.wrapper
+	{
+		width: 100%;
+		table-layout: fixed;
+		background-color: #cccccc;
+		padding-bottom: 60px;
+	}
+
+	/* format main*/
+	.main
+	{
+		background-color: #ffffff;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 600px;
+		border-spacing: 0;
+		font-family: sans-serif;
+		color: #17181b;
+	}
+
+	/* format two columns under header for company logo and social logos
+	to center everything and font-size 0 to clear inherent format from previous*/
+	.two-columns
+	{
+		text-align: center;
+		font-size: 0;
+		
+	}
+
+	/* format the two columns to display in row using inline-block  */
+	.two-columns .column 
+	{
+		width: 100%;
+		max-width: 300px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		
+	}
+
+	/* format three columns  for ecommer , web design, and html email
+	to center everything and font-size 0 to clear inherent format from previous*/
+	.three-columns
+	{
+		text-align: center;
+		font-size: 0;
+		padding: 15px 0 25px;
+		display: flex;
+		flex-direction: row;
+		
+		
+	}
+
+	/* format the three columns to display in row using inline-block  */
+	.three-columns .column 
+	{
+		width: 100%;
+		max-width: 200px;
+	
+		vertical-align: top;
+		text-align: center;
+		
+	}
+
+	/*Format the three column padding class*/
+
+	.three-columns .padding 
+	{
+		padding: 15px;
+	}
+
+	/* format the column content to bring back the paragraph tex
+	without this the paragraph will disapper due to the font-size 0 from 
+	previous format for class three column */
+	.three-columns .content 
+	{
+		font-size: 15px;
+		line-height: 20px;
+		padding: 0 5px;
+
+	}
+
+	/* Format the last two column section */
+
+	.two-columns .padding
+	{
+		padding: 20px;
+	}
+
+	.two-columns .content
+	{
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+
+	/* Format button */
+	button
+	{
+		background-color: #ffffff;
+		color: #171a1b;
+		padding: 12px 20px;
+		border-radius: 5px;
+		font-weight: bold;
+		
+
+	}
+
+
+
+
+
+
+	
+
+</style>
+
+
+</head>
+<body>
+
+	<center class="wrapper">
+
+		<table class="main" width="100%">
+
+		
+
+<!-- TOP BORDER -->
+
+
+<!-- LOGO SECTION with two column first col for company logo
+second colum for five social icons -->
+
+<tr>
+	<!-- padding top 14 0 left right and 4 bottom-->
+	<td style="padding: 14px 0 4px;">
+		<table width="100%">
+
+			<!-- outside table to cover two columns inside -->
+			<tr>
+				<td class="two-columns">
+
+					<!-- first column table for company logo -->
+					<table class="column">
+					<tr>
+						<!-- padding for company logo top 0 , right left 62 bottom 10-->
+						<td style="padding: 0 62px 10px;">
+							<a href="#"><img src="img/modern.jpg" alt="modern logo" width="180" title="modern logo"></a>
+						</td>
+					</tr>
+					</table>
+
+
+					<!-- second column table for five social icons -->
+					<table class="column">
+						<tr>
+							<!-- padding for social icon top 10px left right 72px -->
+							<td style="padding: 10px 72px ;">
+								<a href="#"><img src="img/black-facebook.png" alt="facebook logo" width="30" title="facebook logo"></a>
+								<a href="#"><img src="img/black-twitter.png" alt="twitter logo" width="30" title="twitter logo"></a>
+								<a href="#"><img src="img/black-youtube.png" alt="youtube logo" width="30" title="youtube logo"></a>
+								<a href="#"><img src="img/black-linkedin.png" alt="linkedin logo" width="30" title="linkedin logo"></a>
+								<a href="#"><img src="img/black-instagram.png" alt="instagram logo" width="30" title="instagram logo"></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+
+		</table>
+	</td>
+</tr>
+
+
+<!-- BANNER IMAGE -->
+<tr>
+	<td>
+		<!-- main width is 600px as set in style
+		must set the banner width to 600px to fit the main width
+	    also set max width to 100% so that when resize the screen
+	     image dont overflow the main width -->
+		<a href="#"><img src="img/banner.jpg" alt="banner" width="600" style="max-width:100%"></a>
+	</td>
+</tr>
+
+
+<!-- THREE COLUMN SECTION -->
+
+
+<tr>
+	<td>
+		<table width="100%">
+			<tr>
+				<td class="three-columns">
+
+					<!-- first column table -->
+					<table class="column">
+						<tr>
+							<td class="padding">
+								<table class="content">
+
+									<!-- 1st col 1st row for email icon -->
+									<tr>
+										<td>
+											<a href="#"><img src="img/email.png" alt="email icon" title="email logo" width="130" style="max-width:130;"></a>
+										</td>
+									</tr>
+
+									<!-- 1st col 2nd  row for Ecommerce  and detail-->
+									<tr>
+										<td>
+											<p style="font-size: 17px; font-weight: bold; color: red">Ecommerce</p>
+											<p>Responsive HTML Email Template Course
+												to master email development.</p>
+										</td>
+									</tr>
+
+
+								</table>
+
+							</td>
+						</tr>
+					</table>
+
+
+					<!-- second column table -->
+					<table class="column">
+						<tr>
+							<td class="padding">
+								<table class="content">
+
+									<!-- 1st col 1st row for email icon -->
+									<tr>
+										<td>
+											<a href="#"><img src="img/settings.png" alt="web design" title="web design logo" width="130" style="max-width:130;"></a>
+										</td>
+									</tr>
+
+									<!-- 1st col 2nd  row for Ecommerce  and detail-->
+									<tr>
+										<td>
+											<p style="font-size: 17px; font-weight: bold; color: red">Web Design</p>
+											<p>Responsive HTML Email Template Course
+												to master email development..</p>
+										</td>
+									</tr>
+
+
+								</table>
+
+							</td>
+						</tr>
+					</table>
+
+					<!-- 3rd column table  -->
+					<table class="column">
+						<tr>
+							<td class="padding">
+								<table class="content">
+
+									<!-- 1st col 1st row for email icon -->
+									<tr>
+										<td>
+											<a href="#"><img src="img/home.png" alt="html home logo" title="html home logo"
+												width="130" style="max-width:130;"></a>
+										</td>
+									</tr>
+
+									<!-- 1st col 2nd  row for Ecommerce  and detail-->
+									<tr>
+										<td>
+											<p style="font-size: 17px; font-weight: bold; color: red">HTML Email</p>
+											<p>Responsive HTML Email Template Course
+												to master email development..</p>
+										</td>
+									</tr>
+
+
+								</table>
+
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+
+
+		</table>
+	</td>
+</tr>
+
+
+
+
+
+
+<!-- TWO COLUMN SECTION black background for image on left
+and paragraph on right-->
+<tr>
+	<td style="background-color: #26292b; color: #ffffff">
+		<table width="100%">
+			<tr>
+				<td class="two-columns">
+					<table class="column">
+
+						<tr>
+							<td class="padding">
+								<table class="content">
+									<tr>
+										<td>
+											<a href="#"><img src="img/keyboard.jpg" alt=""
+												width="260" style="max-width: 260px;"></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+					</table>
+
+					<table class="column">
+
+						<tr>
+							<td class="padding">
+								<table class="content">
+									<tr>
+										<td>
+											<p style="color: red; font-size: 18px; font-weight: bold;"> Create Customer Design </p>
+											<p style="padding-bottom: 16px;">Over the years we have built up a massive portfolio for our client
+												websites and email designs.
+											</p>
+											<button type="button"> Read More</button>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+
+		</table>
+	</td>
+</tr>
+
+
+
+<!-- TITLE, TEXT & BUTTON -->
+
+	<tr>
+		<td width=" 100%">
+			<table >
+				<tr>
+					<td style="text-align: center;">
+						<h3 style="padding: 5px;  color: red">HTML Email Template Course</h3>
+						
+						<p style="line-height: 23px; font-size: 15px; padding: 5px 20px 15px ; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Amet doloremque quibusdam voluptatum. 
+							Omnis quam autem alias neque adipisci esse aut.</p>
+							
+
+						<button type="button" style="margin-bottom: 20px;">View Course</button>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+
+
+<!-- FOOTER SECTION -->
+
+	</table>
+
+	</center>
+
+
+</body>
+</html>
+
+<!-- <div style="position:absolute;bottom: 0;width: 100%;text-align: center;line-height: 40px;font-size: 25px;">
+	<a href="https://responsivehtmlemail.com" target="_blank" style="color: #404577;text-decoration: none;">www.ResponsiveHTMLEmail.com</a>
+</div> -->
